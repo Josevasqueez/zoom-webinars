@@ -8,6 +8,7 @@ function ZoomApp() {
 
 	// Aquí configurar la URL de la api que utilizaremos como puente entre ZOOM y esta vista.
 	const url = 'http://localhost:3700/webinars'
+	
 	// Acá realizamos la petición
 	const { data, loading } = useFetch(url);
 
