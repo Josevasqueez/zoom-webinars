@@ -59,9 +59,8 @@ function ZoomApp() {
 		}
 	}
 
-	// console.log(data);
 	return (
-		<div className="container p-0">
+		<div className="container-fluid">
 			{
 				loading && <div className="text-center py-5 my-5"><div className="spinner-border text-primary" role="status"></div></div>
 			}
