@@ -52,6 +52,12 @@ function ZoomApp() {
 			return false;
 		})
 
+		webinars = webinars.sort((a,b) => {
+			if(moment(a.start_time).isBefore(b.start_time)) return -1;
+			if(moment(a.start_time).isSame(b.start_time)) return 0;
+			return 1;
+		})
+
 		// Detectamos la cantidad de páginas necesarias
 		var pages = Math.ceil((webinars.length) / 6);
 		var resultWebinars = [];
